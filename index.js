@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const form = require("./routes/form.js");
+const {verify} = require("./middlewares/auth.js")
 const port = 4000;
 app.set("view engine", "ejs");
 app.set("views", "views");
